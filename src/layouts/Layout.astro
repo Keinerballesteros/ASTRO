@@ -1,5 +1,7 @@
+
 ---
 const { title } = Astro.props;
+import { Icon } from 'astro-icon/components';
 const products = [
 	{
 		icon: "",
@@ -27,9 +29,32 @@ const products = [
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="header">
-			<div class="container container_info">
-				Contenido de la cabecera
+		<div class="bg-zinc-800 text-zinc-200 " >
+			<div class="container flex items-center">
+				<img src="/public/logo.webp" class="h-[61px]" alt="logo_Alliexpress">
+				<div class="relative w-3/6">
+				<input placeholder="Buscar..." class="h-9 rounded-full pl-5 outline-none pr-10 text-black w-full"/>
+					<div class="bg-zinc-800 right-1 top-[2px] absolute inline-block text-white rounded-2xl py-1 px-2">
+					<Icon name="mdi:search" class="size-6"/>
+					</div>
+				</div>
+
+				<div class="flex p-0 m-0 ml-9" >
+					<Icon name="mdi:qrcode" class="size-8"/>
+					<div class="text-xs ml-2" >
+					<p>Descarga la app</p>
+					<p> de AlliExpress</p>
+					</div>
+				</div>
+
+				<div class="flex p-0 m-0 ml-9 ">
+					<Icon name="mdi:cart" class="size-8"/>
+					<div class="text-xs ml-1 relative flex-col" >
+					<p class="ml-1 bg-white text-zinc-700 justify-center rounded items-center" >0</p>
+					<b class="ml-2">cesta</b>
+					</div>
+					
+				</div>
 			</div>
 		</div>
 		<div class=" container banner">
@@ -78,17 +103,6 @@ const products = [
 	}
 	.main_menu a:hover{
 		background-color: #F0A202;
-	}
-	.header{
-		background-color: rgb(255, 100, 0);
-	}
-	.container_info{
-		height: 120px;
-	}
-	.container{
-		max-width: 1280px;
-		/* background-color: red;*/
-		margin: 0 auto;
 	}
 	.banner{
 		height: 240px;
