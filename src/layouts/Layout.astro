@@ -29,7 +29,7 @@ const products = [
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="bg-zinc-800 text-zinc-200 " >
+		<div class="bg-zinc-900 text-zinc-200 " >
 			<div class="container flex items-center">
 				<img src="/public/logo.webp" class="h-[61px]" alt="logo_Alliexpress">
 				<div class="relative w-3/6">
@@ -47,15 +47,27 @@ const products = [
 					</div>
 				</div>
 
-				<div class="flex p-0 m-0 ml-9 ">
-					<Icon name="mdi:cart" class="size-8"/>
-					<div class="text-xs ml-1 relative flex-col" >
-					<p class="ml-1 bg-white text-zinc-700 justify-center rounded items-center" >0</p>
-					<b class="ml-2">cesta</b>
+				<div class="flex p-0 m-0 ml-9">
+					<div class="flex-row">
+						<Icon name="" class="size-8"/>
+						<p class="ml-1 bg-white" > ES </p>
+						<b>COP</b>
 					</div>
-					
 				</div>
+
+				<div class="flex p-0 m-0 ml-9 ">
+					 <Icon name="mdi:cart" class="size-8"/>
+					<div class="text-xs ml-1 relative flex-col" >
+					<p class="ml-1 bg-white text-gray-950 justify-center rounded items-center" >0</p>
+					<b class="ml-2">Cesta</b>
+					</div>
+				</div>
+
 			</div>
+		</div>
+		<div class="bg-zinc-900 text-zinc-200">
+			
+				
 		</div>
 		<div class=" container banner">
 			BANNER
@@ -86,48 +98,6 @@ const products = [
 	</body>
 </html>
 <style is:global>
-	.main_menu{
-		display: flex;
-		height: 40px;
-		background-color: #f11805;
-	}
-	.main_menu a{
-		transition: background 400ms ease-in-out;
-		display: flex;
-		align-items: center;
-		height: 100%;
-		text-decoration: none;
-		color: white;
-		font-weight: bold;
-		padding: 0 12px;
-	}
-	.main_menu a:hover{
-		background-color: #F0A202;
-	}
-	.banner{
-		height: 240px;
-		background-color: aqua;
-	}
-	.product_list{
-		height: 80px;
-		display: flex;
-		margin-top: 6px;
-	}
-	.product_list div{
-		height: 100%;
-		display: flex;
-		max-width: 180px;
-		text-align: center;
-		flex-direction: column;
-		justify-content: center;
-		border: 1px solid gray;
-		border-radius: 6px;
-		margin-right: 3px;
-		align-items: center;
-	}
-	.categories{
-		height: 80px;
-	}
 	.footer{
 		height: 80px;
 	}
