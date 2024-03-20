@@ -29,9 +29,9 @@ const products = [
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="bg-zinc-900 text-zinc-200 " >
-			<div class="container flex items-center">
-				<img src="/public/logo.webp" class="h-[61px]" alt="logo_Alliexpress">
+		<div class="bg-zinc-900 text-zinc-200 pb-2" >
+			<div class=" flex items-center">
+				<img src="/public/logo.webp" class="h-[61px] ml-10" alt="logo_Alliexpress">
 				<div class="relative w-3/6">
 				<input placeholder="Buscar..." class="h-9 rounded-full pl-5 outline-none pr-10 text-black w-full"/>
 					<div class="bg-zinc-800 right-1 top-[2px] absolute inline-block text-white rounded-2xl py-1 px-2">
@@ -39,7 +39,7 @@ const products = [
 					</div>
 				</div>
 
-				<div class="flex p-0 m-0 ml-9" >
+				<div class="flex p-0 m-0 ml-24" >
 					<Icon name="mdi:qrcode" class="size-8"/>
 					<div class="text-xs ml-2" >
 					<p>Descarga la app</p>
@@ -47,15 +47,7 @@ const products = [
 					</div>
 				</div>
 
-				<div class="flex p-0 m-0 ml-9">
-					<div class="flex-row">
-						<Icon name="" class="size-8"/>
-						<p class="ml-1 bg-white" > ES </p>
-						<b>COP</b>
-					</div>
-				</div>
-
-				<div class="flex p-0 m-0 ml-9 ">
+				<div class="flex p-0 m-0 ml-12 ">
 					 <Icon name="mdi:cart" class="size-8"/>
 					<div class="text-xs ml-1 relative flex-col" >
 					<p class="ml-1 bg-white text-gray-950 justify-center rounded items-center" >0</p>
@@ -65,9 +57,35 @@ const products = [
 
 			</div>
 		</div>
-		<div class="bg-zinc-900 text-zinc-200">
-			
-				
+		<div class="bg-zinc-900 text-zinc-200 w-full h-10 pb-1" >
+			<nav class="flex items-center">
+				<div class="border rounded-full  h-9 ml-16 p-1 block">
+					<li class="list-none p-1  hover:bg-white text-zinc-950 w-full" ><a>Todas las categorías</a>
+						<li class="list-none  hover:text-black" style="display-none">
+							<li><a href="#">Hogar y jardín</a></li>
+							<li><a href="#">Cabello y Pelucas</a></li>
+							<li><a href="#">Moda Hombre</a></li>
+							<li><a href="#">Accesorios</a></li>
+							<li><a href="#">Electrónica</a></li>
+							<li><a href="#">Hogar e iluminación</a></li>
+							<li><a href="#">Electrodomésticos</a></li>
+							<li><a href="#">Motor</a></li>
+							<li><a href="#">Bolsos y Maletas</a></li>
+						</li>
+					</li>
+				</div>
+				<div class="ml-7"> 
+					<a href="#">NN</a>
+					<a href="#">SuperVentas</a>
+					<a href="#">Mejores Marcas</a>
+					<a href="#">Hogar y jardín</a>
+					<a href="#">Cabello y pelucas</a>
+					<a href="#">Moda</a>
+				</div>
+				<div>
+					<li>Más</li>
+				</div>
+			</nav>	
 		</div>
 		<div class=" container banner">
 			BANNER
